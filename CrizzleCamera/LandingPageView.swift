@@ -33,7 +33,7 @@ struct LandingPageView: View {
             }
         }
         .sheet(isPresented: $showCameraView) {
-            CameraView(mediaTypes: [UTType.image.identifier]) { image in
+            CameraView { image in
                 detectPeople(in: image)
             }
         }
@@ -56,5 +56,11 @@ struct LandingPageView: View {
         } catch {
             print("Error: \(error)")
         }
+    }
+}
+
+struct LandingPageView_Previews: PreviewProvider {
+    static var previews: some View {
+        LandingPageView()
     }
 }

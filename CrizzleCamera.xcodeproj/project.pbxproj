@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		056049412A5629C0008F69B5 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 056049402A5629C0008F69B5 /* info.plist */; };
+		056049452A562EB8008F69B5 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056049432A562EA8008F69B5 /* CoreBluetooth.framework */; };
+		056049462A562EB8008F69B5 /* CoreBluetooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 056049432A562EA8008F69B5 /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05B19CE02A5255A600BFC721 /* CrizzleCameraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B19CDF2A5255A600BFC721 /* CrizzleCameraApp.swift */; };
 		05B19CE42A5255A700BFC721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B19CE32A5255A700BFC721 /* Assets.xcassets */; };
 		05B19CE72A5255A700BFC721 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B19CE62A5255A700BFC721 /* Preview Assets.xcassets */; };
@@ -37,7 +40,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		056049472A562EB8008F69B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				056049462A562EB8008F69B5 /* CoreBluetooth.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		056049402A5629C0008F69B5 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		056049432A562EA8008F69B5 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		056049482A562F4C008F69B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05B19CDC2A5255A600BFC721 /* CrizzleCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrizzleCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B19CDF2A5255A600BFC721 /* CrizzleCameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrizzleCameraApp.swift; sourceTree = "<group>"; };
 		05B19CE32A5255A700BFC721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				056049452A562EB8008F69B5 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		056049422A562EA8008F69B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				056049432A562EA8008F69B5 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		05B19CD32A5255A600BFC721 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +115,7 @@
 				05B19CF42A5255A700BFC721 /* CrizzleCameraTests */,
 				05B19CFE2A5255A700BFC721 /* CrizzleCameraUITests */,
 				05B19CDD2A5255A600BFC721 /* Products */,
+				056049422A562EA8008F69B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +132,7 @@
 		05B19CDE2A5255A600BFC721 /* CrizzleCamera */ = {
 			isa = PBXGroup;
 			children = (
+				056049482A562F4C008F69B5 /* Info.plist */,
 				05C47AEB2A55017100B9148D /* LandingPageView.swift */,
 				05B19CDF2A5255A600BFC721 /* CrizzleCameraApp.swift */,
 				05B19D0E2A5255F400BFC721 /* CameraView.swift */,
@@ -110,6 +141,7 @@
 				05B19CE82A5255A700BFC721 /* Persistence.swift */,
 				05B19CEA2A5255A700BFC721 /* CrizzleCamera.xcdatamodeld */,
 				05B19CE52A5255A700BFC721 /* Preview Content */,
+				056049402A5629C0008F69B5 /* info.plist */,
 			);
 			path = CrizzleCamera;
 			sourceTree = "<group>";
@@ -149,6 +181,7 @@
 				05B19CD82A5255A600BFC721 /* Sources */,
 				05B19CD92A5255A600BFC721 /* Frameworks */,
 				05B19CDA2A5255A600BFC721 /* Resources */,
+				056049472A562EB8008F69B5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,6 +278,7 @@
 			files = (
 				05B19CE72A5255A700BFC721 /* Preview Assets.xcassets in Resources */,
 				05B19CE42A5255A700BFC721 /* Assets.xcassets in Resources */,
+				056049412A5629C0008F69B5 /* info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +469,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CrizzleCamera/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CrizzleCamera/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -464,6 +499,7 @@
 				DEVELOPMENT_TEAM = 77AR89XZQC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CrizzleCamera/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
