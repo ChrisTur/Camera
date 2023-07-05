@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		05B19CE02A5255A600BFC721 /* CrizzleCameraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B19CDF2A5255A600BFC721 /* CrizzleCameraApp.swift */; };
-		05B19CE22A5255A600BFC721 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B19CE12A5255A600BFC721 /* ContentView.swift */; };
 		05B19CE42A5255A700BFC721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B19CE32A5255A700BFC721 /* Assets.xcassets */; };
 		05B19CE72A5255A700BFC721 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B19CE62A5255A700BFC721 /* Preview Assets.xcassets */; };
 		05B19CE92A5255A700BFC721 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B19CE82A5255A700BFC721 /* Persistence.swift */; };
@@ -16,6 +15,9 @@
 		05B19CF62A5255A700BFC721 /* CrizzleCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B19CF52A5255A700BFC721 /* CrizzleCameraTests.swift */; };
 		05B19D002A5255A700BFC721 /* CrizzleCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B19CFF2A5255A700BFC721 /* CrizzleCameraUITests.swift */; };
 		05B19D022A5255A700BFC721 /* CrizzleCameraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B19D012A5255A700BFC721 /* CrizzleCameraUITestsLaunchTests.swift */; };
+		05B19D0F2A5255F400BFC721 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B19D0E2A5255F400BFC721 /* CameraView.swift */; };
+		05C47AEC2A55017100B9148D /* LandingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C47AEB2A55017100B9148D /* LandingPageView.swift */; };
+		05C47AF02A550A7700B9148D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C47AEF2A550A7700B9148D /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 /* Begin PBXFileReference section */
 		05B19CDC2A5255A600BFC721 /* CrizzleCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrizzleCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B19CDF2A5255A600BFC721 /* CrizzleCameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrizzleCameraApp.swift; sourceTree = "<group>"; };
-		05B19CE12A5255A600BFC721 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		05B19CE32A5255A700BFC721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05B19CE62A5255A700BFC721 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		05B19CE82A5255A700BFC721 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +49,9 @@
 		05B19CFB2A5255A700BFC721 /* CrizzleCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrizzleCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B19CFF2A5255A700BFC721 /* CrizzleCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrizzleCameraUITests.swift; sourceTree = "<group>"; };
 		05B19D012A5255A700BFC721 /* CrizzleCameraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrizzleCameraUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		05B19D0E2A5255F400BFC721 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		05C47AEB2A55017100B9148D /* LandingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
+		05C47AEF2A550A7700B9148D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 		05B19CDE2A5255A600BFC721 /* CrizzleCamera */ = {
 			isa = PBXGroup;
 			children = (
+				05C47AEB2A55017100B9148D /* LandingPageView.swift */,
 				05B19CDF2A5255A600BFC721 /* CrizzleCameraApp.swift */,
-				05B19CE12A5255A600BFC721 /* ContentView.swift */,
+				05B19D0E2A5255F400BFC721 /* CameraView.swift */,
+				05C47AEF2A550A7700B9148D /* ContentView.swift */,
 				05B19CE32A5255A700BFC721 /* Assets.xcassets */,
 				05B19CE82A5255A700BFC721 /* Persistence.swift */,
 				05B19CEA2A5255A700BFC721 /* CrizzleCamera.xcdatamodeld */,
@@ -264,8 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				05B19CE92A5255A700BFC721 /* Persistence.swift in Sources */,
-				05B19CE22A5255A600BFC721 /* ContentView.swift in Sources */,
+				05C47AEC2A55017100B9148D /* LandingPageView.swift in Sources */,
+				05C47AF02A550A7700B9148D /* ContentView.swift in Sources */,
 				05B19CEC2A5255A700BFC721 /* CrizzleCamera.xcdatamodeld in Sources */,
+				05B19D0F2A5255F400BFC721 /* CameraView.swift in Sources */,
 				05B19CE02A5255A600BFC721 /* CrizzleCameraApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CrizzleCamera/Preview Content\"";
+				DEVELOPMENT_TEAM = 77AR89XZQC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -499,6 +508,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77AR89XZQC;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MARKETING_VERSION = 1.0;
@@ -534,6 +544,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 77AR89XZQC;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = FilTrace.CrizzleCameraUITests;
