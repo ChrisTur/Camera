@@ -1,16 +1,14 @@
 import SwiftUI
 import UIKit
-import Vision
 import UniformTypeIdentifiers
+import AVFoundation
 
 struct CameraView: UIViewControllerRepresentable {
     typealias UIViewControllerType = UIImagePickerController
     
-    var mediaTypes: [String]
     var didFinishPicking: (UIImage) -> Void
     
-    init(mediaTypes: [String] = [UTType.image.identifier], didFinishPicking: @escaping (UIImage) -> Void) {
-        self.mediaTypes = mediaTypes
+    init(didFinishPicking: @escaping (UIImage) -> Void) {
         self.didFinishPicking = didFinishPicking
     }
     
@@ -23,7 +21,19 @@ struct CameraView: UIViewControllerRepresentable {
         let viewController = UIViewControllerType()
         viewController.delegate = context.coordinator
         viewController.sourceType = .camera
-        viewController.mediaTypes = mediaTypes
+        
+        // Request camera authorization
+        AVCaptureDevice.requestAccess(for: .video) { granted in
+            DispatchQueue.main.async {
+                if granted {
+                    // Camera access granted
+                } else {
+                    // Camera access denied
+                    // Handle the denied state gracefully
+                }
+            }
+        }
+        
         return viewController
     }
     
